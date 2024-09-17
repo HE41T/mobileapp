@@ -2,9 +2,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './com/home_sc';
 import AboutScreen from './com/about_sc';
-import ContactSreen from './com/contact_sc';
 import JsonScreen from './com/json_sc';
 import ClockScreen from './com/clock_sc';
+import InsertPostScreen from './com/insertPost_sc';
 import InsertScreen from'./com/insert_sc';
 const Stack = createNativeStackNavigator();
 
@@ -12,7 +12,7 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen
+            <Stack.Screen
                     name="Home"
                     component={HomeScreen}
                 />
@@ -21,8 +21,8 @@ export default function App() {
                     component={AboutScreen}
                 />
                 <Stack.Screen
-                    name="Contact"
-                    component={ContactSreen}
+                    name="InsertPost"
+                    component={InsertPostScreen}
                 />
                 <Stack.Screen
                     name="Json"

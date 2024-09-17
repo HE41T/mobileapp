@@ -26,7 +26,7 @@ export default function HomeScreen({ navigation }) {
       </Text>
       <Button
         title="Go to Post Insert"
-        onPress={() => navigation.navigate("Insert")}
+        onPress={() => navigation.navigate("InsertPost")}
       />  
       <Text>
         =============================================
