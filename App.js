@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './com/home_sc';
 import AboutScreen from './com/about_sc';
 import JsonScreen from './com/json_sc';
-import ClockScreen from './com/clock_sc';
+//import ClockScreen from './com/clock_sc';
 import InsertPostScreen from './com/insertPost_sc';
 import InsertScreen from'./com/insert_sc';
 const Stack = createNativeStackNavigator();
@@ -28,12 +28,12 @@ export default function App() {
                     name="Json"
                     component={JsonScreen}
                 />
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="Clock"
                     component={ClockScreen}
-                />
+                /> */}
                 <Stack.Screen
-                    name="Insert"
+                    name="InsertGet"
                     component={InsertScreen}
                 />
             </Stack.Navigator>
